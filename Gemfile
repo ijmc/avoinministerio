@@ -2,6 +2,12 @@ source "https://rubygems.org"
 
 gem "rails", "3.2.11"
 
+gem "multi_json", "1.5.0"
+gem 'rb-readline'
+gem "taps"
+gem "heroku"
+gem "sequel"
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
