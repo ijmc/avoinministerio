@@ -2,7 +2,7 @@
   = render partial: 'facebook_meta_tags'
 - content_for :head do
   %title= "@Avoinministerio #{state_localised(@idea.state).capitalize}: #{shorten(@idea.title, 125, 15, "")}"
-:javascript
+
   $(document).ready(function(){
       var r = Raphael("votepie");
       var pie = r.piechart(135, 92, 57, [
@@ -202,3 +202,5 @@
       = render "comments/form", model: @idea
     .comments.suffix_8
       = render partial: 'comments/comment', collection: @idea.comments.published
+:javascript
+  ideaTour();
